@@ -6,6 +6,7 @@ public class EmployeeWage {
 		 int wagePerHour = 20;
 	        int fullDay = 8;
 	        int halfDay = 4;
+	        int totalNoOfDays = 20;
 	        System.out.println("===== WELCOME TO EMPLOYEE WAGE COMPUTATION ======");
 	        System.out.println("");
 
@@ -14,14 +15,14 @@ public class EmployeeWage {
 	            case 0:
 	                System.out.print("Employee is Present");
 	                System.out.println("");
-	                System.out.print("The daily wage of Employee is : " + (wagePerHour * fullDay));
+	                System.out.print("The daily wage of Employee is : " + ( wagePerHour * fullDay * totalNoOfDays ));
 	                System.out.println("");
 	                break;
 
 	            case 1:
 	                System.out.print("Employee is Present but working part time ");
 	                System.out.println("");
-	                System.out.print("The daily wage of Employee is : " + (wagePerHour * halfDay));
+	                System.out.print("The daily wage of Employee is : " + ( wagePerHour * halfDay * totalNoOfDays ));
 	                System.out.println("");
 	                break;
 
@@ -33,7 +34,6 @@ public class EmployeeWage {
 	                break;
 
 	        }
-
 	
 	}
 
